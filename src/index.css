@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode: butter yellow + light blue */
+:root {
+  --bg: #efecd1;
+  --ink: #3b271c;
+  --soft: #5c4638;
+  --muted: #735f50;
+  --accent: #8a4b2d;
+  --tint: #cfe5e3;
+  --line: #d6cf9f;
+  --field: #f9f6dc;
+  --glow: rgba(120, 190, 185, 0.18);
+}
+
+/* Dark mode: chocolate brown + light blue */
+.dark {
+  --bg: #1d0e07;
+  --ink: #8cd7e1;
+  --soft: #bfd5d0;
+  --muted: #96ada8;
+  --accent: #a9d6d0;
+  --tint: rgba(169, 214, 208, 0.1);
+  --line: #3a2218;
+  --field: #150a05;
+  --glow: rgba(169, 214, 208, 0.06);
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* blinking cursor for the typing name */
+.cursor::after {
+  content: "|";
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
