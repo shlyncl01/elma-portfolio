@@ -11,8 +11,8 @@ export const ME = {
   email: "ashleyelma1@gmail.com", // your GitHub shows a different email; pick the one you check
   phone: "0966 865 2807",
   location: "Molino IV, Bacoor City, Cavite",
-  resume: "/Elma,AshleyNicole_Resume.pdf", // put the file in /public
-  socials: [
+  resume: "/Ashley-Nicole-Elma-Resume.pdf",
+    socials: [
     { label: "GitHub", href: "https://github.com/shlyncl01" },
     { label: "LinkedIn", href: "https://linkedin.com/in/ashley-nicole-elma-aa8123444" }, // TODO
   ],

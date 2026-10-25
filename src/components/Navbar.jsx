@@ -12,7 +12,7 @@ export default function Navbar({ dark, onToggle }) {
       <div className="flex items-center gap-3">
         <a
           href={ME.resume}
-          download
+          download="Ashley-Nicole-Elma-Resume.pdf"
           className="rounded-full bg-[var(--accent)] px-5 py-2 text-sm font-semibold text-[var(--bg)] transition hover:opacity-90"
         >
           Resume
